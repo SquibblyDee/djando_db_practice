@@ -74,6 +74,7 @@ class Author(models.Model):
 #   7. For the 3rd book, retrieve all the authors
 #   this_book = Book.objects.get(id=3)
 #   authors = Author.objects.filter(books=this_book)
+#	this_book.authors.value()
 
 #   8. For the 3rd book, remove the first author
 #   this_book = Book.objects.get(id=3)
