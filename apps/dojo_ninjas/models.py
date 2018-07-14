@@ -40,6 +40,3 @@ class Ninja(models.Model):
 
 # 8: Be able to retrieve all ninjas that belong to the last Dojo
     # Ninja.objects.get(dojo_id=3)
-
-    
-
