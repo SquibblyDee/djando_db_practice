@@ -12,8 +12,8 @@ class User(models.Model):
     last_name = models.CharField(max_length=255)
     email = models.CharField(max_length=255)
     # The Many to Many link
-    books = models.ManyToManyField(Book, related_name="liked_books")
+    liked_users = models.ManyToManyField(Book, related_name="liked_books")
     # The One to Many Link
-    book = models.ForeignKey(Book, related_name="uploaded_books")
+    uploader = models.ForeignKey(Book, related_name="uploaded_books")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now_add=True)
